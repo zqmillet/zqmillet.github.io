@@ -13,3 +13,7 @@ It's worth mentioning that, `MathJax` display engine is used to render the mathe
         f(t) &= \frac{1}{2\pi}\int_{-\infty}^{\infty}F(\omega)e^{i\omega t}\mathrm{d}\omega\text{.}
     \end{align}
 \\]
+
+{% highlight matlab %}
+a01 = Classes.Node('23333');
+{% endhighlight %}
