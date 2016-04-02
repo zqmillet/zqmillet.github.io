@@ -5,7 +5,6 @@
     background: #fff;
     @extend %vertical-rhythm;
 
-    font-family: 'Source Code Pro', Monaco, monospace;
     .highlighter-rouge & {
       background: #eef;
     }
