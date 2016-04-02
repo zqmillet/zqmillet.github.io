@@ -2,7 +2,7 @@
 layout: post
 title:  "Let's Begin!"
 date:   2016-04-02 15:48:10 +0800
-# categories: BlaBla, LaTeX
+tags: BlaBla, LaTeX
 ---
 I've attempted to make a `github page` for a long time, but there are always something wrong with `jekyll`. At last, I found that the problem is `Windows`. When I changed my OS into `Ubuntu`, all problems have gone.
 
