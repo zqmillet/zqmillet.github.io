@@ -20,8 +20,5 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 github_username:  zqmillet
 
 # Build settings
-markdown: kramdown
+markdown: Kramdown
 
-kramdown:
-  input: GFM
-  syntax_highlighter: rouge
