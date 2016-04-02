@@ -9,9 +9,9 @@
 title: 
 email: qiqi@hust.edu.cn
 description: > # this means to ignore newlines until "baseurl:"
-  I've decided to write something.<br>
+  I've decided to write something.<br><br>
 
-  Here are some details about my researches. If there are some progresses, I will post them here.<br>
+  Here are some details about my researches. If there are some progresses, I will post them here.<br><br>
 
   BTW, my research interests include risk assessment and decision-making for industrial control systems.
 baseurl: "" # the subpath of your site, e.g. /blog
