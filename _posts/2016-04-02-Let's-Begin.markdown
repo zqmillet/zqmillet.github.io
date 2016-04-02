@@ -14,6 +14,26 @@ It's worth mentioning that, `MathJax` display engine is used to render the mathe
     \end{align}
 \\]
 
-{% highlight matlab %}
-a01 = Classes.Node('23333');
+Of cause, `jekyll` includes syntax hilighting, the following code is an example of C language.
+{% highlight c %}
+#include<stdio.h>
+
+int main(void)
+{
+    int i, sum = 0;
+    for (i = 1; i <= 100; i++)
+        sum += i;
+    printf("%d", sum);
+}
 {% endhighlight %}
+
+The following code is an example of Matlab Language. 
+{% highlight matlab %}
+x = 0:0.1:3;
+y = sin(x);
+plot(x, y, 'r');
+{% endhighlight %}
+
+Let's begin!
+
+

@@ -2,7 +2,7 @@
  * Syntax highlighting styles
  */
 .highlight {
-    font: Courier New;
+    font_family: Courier New;
     background: #fff;
     @extend %vertical-rhythm;
 
