@@ -35,7 +35,10 @@ y = sin(x);
 plot(x, y, 'r');
 {% endhighlight %}
 
-![XXX](/figures/test.svg)
+<div align="center">
+<embed src = "/figures/test.svg" width = "200pt" align = "center"><br>
+23333
+</div>
 
 Anyway, let's begin!
 
