@@ -37,7 +37,7 @@ plot(x, y, 'r');
 
 The great thing is that the `HTML` can include vectorgraph, for example, the Fig. 1 shows a Bayesian network, which is a vectorgraph. I plan to post how to insert a vectorgraph in `HTML` soon.
 <div align="center">
-<embed src = "/figures/test.svg" width = "120pt"><br>
+<embed src = "/figures/test.svg" width = "250pt"><br>
 <figcaption>Fig. 1. Bayesian Network</figcaption>
 </div>
 
