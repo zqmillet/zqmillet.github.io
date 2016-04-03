@@ -35,9 +35,10 @@ y = sin(x);
 plot(x, y, 'r');
 {% endhighlight %}
 
+The great thing is that the `HTML` can include vectorgraph, for example, the Fig. 1 is a Bayesian network, which is a vectorgraph. I plan to post how to insert a vectorgraph in `HTML` soon.
 <div align="center">
-<embed src = "/figures/test.svg" width = "200pt" align = "center"><br>
-23333
+<embed src = "/figures/test.svg" width = "120pt"><br>
+<figcaption>Fig. 1. Bayesian Network</figcaption>
 </div>
 
 Anyway, let's begin!
