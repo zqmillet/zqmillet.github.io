@@ -35,6 +35,8 @@ y = sin(x);
 plot(x, y, 'r');
 {% endhighlight %}
 
+![XXX](/figures/test.svg)
+
 Anyway, let's begin!
 
 
