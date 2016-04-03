@@ -6,7 +6,7 @@ tags: BlaBla, LaTeX
 ---
 I've attempted to make a `github page` for a long time, but there are always something wrong with `jekyll`. At last, I found that the problem is `Windows`. When I changed my OS into `Ubuntu`, all problems have gone.
 
-It's worth mentioning that, `MathJax` display engine is used to render the mathematical formulas. For example \\(x\\), \\(y\\), \\(\alpha\\), \\(a^2 + b^2 = c^2\\), and the Fourier transform equations are shown as follows \eqref{eqn:1}.
+It's worth mentioning that, `MathJax` display engine is used to render the mathematical formulas. For example \\(x\\), \\(y\\), \\(\alpha\\), \\(a^2 + b^2 = c^2\\), and the Fourier transform equations are shown as equantions \eqref{eqn:Fourier Transform} and \eqref{eqn:Inverse Fourier Transform}.
 \begin{align}
     \label{eqn:Fourier Transform}
     F(\omega) &= \int_{-\infty}^{\infty}f(t)e^{-i\omega t}\mathrm{d}t \text{,}\\\
