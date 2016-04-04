@@ -6,7 +6,8 @@
 
 
 // Our variables
-$base-font-family: "SourceSerifPro-Regular-Identity", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-path:        "{{ baseurl }}/fonts/";
+$base-font-family: Qiqi, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
 $small-font-size:  $base-font-size * 0.875;

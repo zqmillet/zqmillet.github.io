@@ -19,7 +19,11 @@ url: "http://yourdomain.com" # the base hostname & protocol for your site
 # twitter_username: zqmillet
 github_username:  zqmillet
 
+assets:
+  sources:
+    - _assets/fonts
+    - _assets/figures
+
 # Build settings
 markdown: Kramdown
 
-highlighter: pygments
