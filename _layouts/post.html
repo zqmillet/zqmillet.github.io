@@ -24,4 +24,14 @@ layout: default
     MathJax.Hub.Config({ TeX: { equationNumbers: {autoNumber: "AMS"} } });
   </script>
 
+  <script type="text/x-mathjax-config"> 
+  MathJax.Hub.Config({ 
+    TeX: { 
+      Macros: {  
+          qtext: ['\\style{font-family:inherit;}{\\text{#1}}', 1],
+      } 
+    } 
+  }); 
+</script> 
+
 </article>

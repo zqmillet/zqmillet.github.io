@@ -6,12 +6,12 @@ tags: BlaBla, LaTeX
 ---
 I've attempted to make a `github page` for a long time, but there are always something wrong with `jekyll`. At last, I found that the problem is `Windows`. When I changed my OS into `Ubuntu`, all problems have gone.
 
-It's worth mentioning that, `MathJax` display engine is used to render the mathematical formulas. For example \\(x\\), \\(y\\), \\(\alpha\\), \\(\beta\\), \\(a^2 + b^2 = c^2\\), \\(\sin(\style{font-family:inherit;}{\text{right angle}}) = 1\\), and the Fourier transform equations are shown as equantion \eqref{eqn:Fourier Transform} and equation \eqref{eqn:Inverse Fourier Transform}.
+It's worth mentioning that, `MathJax` display engine is used to render the mathematical formulas. For example \\(x\\), \\(y\\), \\(\alpha\\), \\(\beta\\), \\(a^2 + b^2 = c^2\\), \\(\sin(\qtext{right angle}) = 1\\), and the Fourier transform equations are shown as equantion \eqref{eqn:Fourier Transform} and equation \eqref{eqn:Inverse Fourier Transform}.
 \begin{align}
     \label{eqn:Fourier Transform}
-    F(\omega) &= \int_{-\infty}^{\infty}f(t)e^{-i\omega t}\mathrm{d}t \text{,}\\\\[5pt]
+    F(\omega) &= \int_{-\infty}^{\infty}f(t)e^{-i\omega t}\mathrm{d}t \qtext{,}\\\\[5pt]
     \label{eqn:Inverse Fourier Transform}
-    f(t) &= \frac{1}{2\pi}\int_{-\infty}^{\infty}F(\omega)e^{i\omega t}\mathrm{d}\omega\text{.}
+    f(t) &= \frac{1}{2\pi}\int_{-\infty}^{\infty}F(\omega)e^{i\omega t}\mathrm{d}\omega\qtext{.}
 \end{align}
 
 Of cause, `jekyll` includes syntax hilighting, the following code is an example of C language.

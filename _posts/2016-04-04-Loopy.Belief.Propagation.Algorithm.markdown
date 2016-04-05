@@ -4,10 +4,23 @@ title:  "Loopy Belief Propagation Algorithm"
 date:   2016-04-04 15:48:10 +0800
 tags:   Bayesian Network
 ---
+<script type="text/x-mathjax-config"> 
+MathJax.Hub.Config({ 
+    TeX: { 
+        Macros: { 
+            cnode: ['{#1}^*', 1],  
+            pnode: ['{}^{*}\\!{#1}', 1],  
+            bnt:   ['\\mathscr{B}', 0],
+        } 
+    } 
+}); 
+</script> 
 
-The inference of Bayesian network is a hard problem. Because the exact inference is NP-hard, some approximate infenence  algorithm is developed to reduce the computational complexity. The Loopy Belief Propagation(LBP) algorithm is one of approximate infenence  algorithms, and the existing article about LBP algorithm don't have the detail. Therefore, I decide to post this note to explain how LBP algorithm works.
+The inference of Bayesian network is a hard problem. Because the exact inference is NP-hard, some approximate infenence  algorithm is developed to reduce the computational complexity. The Loopy Belief Propagation (LBP) algorithm is one of approximate infenence  algorithms, and the existing article about LBP algorithm don't have the detail. Therefore, I decide to post this note to explain how LBP algorithm works.
 
 # Introduction of Bayesian Network
+
+## Definition of Bayesian Network
 The Bayesian network is a probabilistic graphical model that represents a set of random variables and their conditional dependencies via a directed acyclic graph. There are three elements of a Bayesian network:
 
 * nodes,
@@ -16,9 +29,40 @@ The Bayesian network is a probabilistic graphical model that represents a set of
 
 With these three elements, the probabilities of all nodes in the Bayesian network can be calculated.
 
-# Loopy Belief Propagation Algorithm
-The LBP algorithm is presented for the Bayesian network without loop. It has been proven that the LBP algorithm has the ability to obtain the exact solution of the Bayesian network without loop.
+## Loop of Bayesian Network
+I want to use Fig. 1 to explain the definition of loop in Bayesian network more intuitively. Fig. 1(a) shows a Bayesian network without loop, while Fig. 1(b) shows a Bayesian network with a loop.
 
-<embed src = "/figures/Bayesian.Network.without.Loop.svg" width = "400pt">
+<div align = "center">
+<table>
+<tr>
+    <td align="center">
+        <embed src = "/figures/Bayesian.Network.without.Loop.svg" width="159.688883556px"><br>
+        <figcaption>Fig. 1(a). Bayesian Network without Loop</figcaption>
+    </td>
+    <td width="20px">
+    </td>
+    <td align="center">
+        <embed src = "/figures/Bayesian.Network.with.Loops.svg" width="159.688883556px"><br>
+        <figcaption>Fig. 1(b). Bayesian Network with Loops</figcaption>
+    </td>
+</tr>
+<tr>
+    <td colspan="3" align="center">
+        <figcaption>Fig. 1. Two Kinds of Bayesian Networks</figcaption>
+    </td>
+</tr>
+</table>
+</div>
+
+The definition of loop in Bayesian network is given as follows. Assume that \\(\bnt\\) is a Bayesian network, and \\(\boldsymbol{x} = (x_1, x_2, \cdots, x_n)\\) is the node set of Bayesian network \\(\bnt\\). If \\(\forall x_i, x_j\in\boldsymbol{x}\\), where \\(i\neq j\\), there is at most one path between \\(x_i\\) and \\(x_j\\), the Bayesian network \\(\bnt\\) has no loop. Whereas, if there exist two nodes \\(x_i\\) and \\(x_j\\) in the Bayesian network \\(\bnt\\) and there are more than one path between nodes \\(x_i\\) and \\(x_j\\), the Bayesian network \\(\bnt\\) has loop.
+
+For example, in Fig. 1(a), for any two nodes, there is at most one path between them, so the Bayesian network in Fig. 1(a) has no loop. In Fig. 1(b), for node A and node D, there are two paths: \\(\qtext{A} \rightarrow \qtext{B} \rightarrow \qtext{D}\\) and \\(\qtext{A} \rightarrow \qtext{C} \rightarrow \qtext{D}\\), so the Bayesian network in Fig. 1(b) has loop. 
+
+# Loopy Belief Propagation Algorithm
+The LBP algorithm is presented for the Bayesian network without loop. It has been proven that the LBP algorithm has the ability to obtain the exact solution of the Bayesian network without loop. So, if we plan to inference a bayesian network without loop, the LBP algorithm is a good choise.
+
+Unfortunately, not all Bayesian networks have no loop, if there are loops in the Bayesian network, the LBP algorithm does not always obtain the correct inference result. But, it does not mean that the LBP algorithm can not be used to inference the Bayesian network with loops. With some slight modification, the LBP algorithm can work well in Bayesian network with loops.
+
+
 
 # A Simple Example
