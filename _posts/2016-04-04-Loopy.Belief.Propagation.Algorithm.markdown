@@ -17,7 +17,7 @@ The Bayesian network is a probabilistic graphical model that represents a set of
 With these three elements, the probabilities of all nodes in the Bayesian network can be calculated.
 
 # Loopy Belief Propagation Algorithm
-The LBP algorithm is presented for the Bayesian network without loop. It has been proven that the LBP algorithm has the ability to obtain the exact solution of the Bayesian network without loop \\(a_1\\).
+The LBP algorithm is presented for the Bayesian network without loop. It has been proven that the LBP algorithm has the ability to obtain the exact solution of the Bayesian network without loop.
 
 <embed src = "/figures/Bayesian.Network.without.Loop.svg" width = "400pt">
 
