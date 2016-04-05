@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Loopy Belief Propagation Algorithm"
+date:   2016-04-04 15:48:10 +0800
+tags:   Bayesian Network
+---
+
+The inference of Bayesian network is a hard problem. Because the exact inference is NP-hard, some approximate infenence  algorithm is developed to reduce the computational complexity. The Loopy Belief Propagation(LBP) algorithm is one of approximate infenence  algorithms, and the existing article about LBP algorithm don't have the detail. Therefore, I decide to post this note to explain how LBP algorithm works.
+
+# Introduction of Bayesian Network
+The Bayesian network is a probabilistic graphical model that represents a set of random variables and their conditional dependencies via a directed acyclic graph. There are three elements of a Bayesian network:
+
+* nodes,
+* a directed acyclic graph,
+* and conditional probability tables.
+
+With these three elements, the probabilities of all nodes in the Bayesian network can be calculated.
+
+# Loopy Belief Propagation Algorithm
+The LBP algorithm is presented for the Bayesian network without loop. It has been proven that the LBP algorithm has the ability to obtain the exact solution of the Bayesian network without loop \\(a_1\\).
+
+<embed src = "/figures/Bayesian.Network.without.Loop.svg" width = "400pt">
+
+# A Simple Example
