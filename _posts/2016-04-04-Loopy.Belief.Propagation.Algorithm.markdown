@@ -4,6 +4,7 @@ title:  "Loopy Belief Propagation Algorithm"
 date:   2016-04-04 15:48:10 +0800
 tags:   Bayesian Network
 ---
+(**This Post is Under Construction!**)
 <script type="text/x-mathjax-config"> 
 MathJax.Hub.Config({ 
     TeX: { 
@@ -62,6 +63,8 @@ For example, in Fig. 1(a), for any two nodes, there is at most one path between 
 The LBP algorithm is presented for the Bayesian network without loop. It has been proven that the LBP algorithm has the ability to obtain the exact solution of the Bayesian network without loop. So, if we plan to inference a bayesian network without loop, the LBP algorithm is a good choise.
 
 Unfortunately, not all Bayesian networks have no loop, if there are loops in the Bayesian network, the LBP algorithm does not always obtain the correct inference result. But, it does not mean that the LBP algorithm can not be used to inference the Bayesian network with loops. With some slight modification, the LBP algorithm can work well in Bayesian network with loops.
+
+
 
 
 
